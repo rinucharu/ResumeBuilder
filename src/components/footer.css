@@ -1,0 +1,42 @@
+footer{
+  color: white;
+}
+
+footer h2{
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: capitalize;
+  padding-top: 10px;
+  padding-bottom: 20px;
+ 
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li{
+  padding-bottom: 15px;
+  font-size: 18px;
+  opacity: 0.5;
+  text-align: start !important;
+ 
+  color: white;
+}
+
+footer ul li:hover{
+  opacity: 1;
+
+
+}
+
+footer .icons ul{
+display: flex !important;
+flex-direction: row;
+justify-content: space-between;
+}
+
+footer .icons ul li:hover{
+  transform: translatey(-10px);
+  transition: 0.4s;
+}

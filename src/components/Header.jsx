@@ -12,7 +12,7 @@ import { positions } from '@mui/system';
 const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="sticky-top">
         <Toolbar>
           <IconButton
             size="large"

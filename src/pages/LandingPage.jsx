@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import ResumeGenarator from "./ResumeGenarator";
 
 const LandingPage = () => {
   return (
@@ -16,7 +17,7 @@ const LandingPage = () => {
             Designed to get hired. <br />
             Your skills, your story, your next job — all in one.
           </p>
-          <Link className="btn btn-primary">Make your Resume</Link>
+          <Link className="btn btn-primary" to="/resumegenerator">Make your Resume</Link>
         </div>
       </section>
 

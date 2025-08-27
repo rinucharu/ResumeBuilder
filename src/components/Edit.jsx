@@ -200,6 +200,10 @@ const Edit = () => {
             className="w-100"
             variant="standard"
           />
+
+          <Button variant="text" alig className="mt-3">
+            UPDATE
+          </Button>
         </Box>
       </Modal>
     </>

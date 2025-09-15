@@ -6,23 +6,47 @@ import Divider from "@mui/material/Divider";
 import { FaHistory } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 import Edit from "./Edit";
+import html2canvas from "html2canvas";
+import { Scale } from "@mui/icons-material";
+import jsPDF from "jspdf";
 
+const Preview = ({ resumeData, showButtons, isFromHistoryPage }) => {
+  console.log(resumeData);
 
-const Preview = () => {
+  const downloadClick = async () => {
+    // to create a image
+    let input = document.getElementById("result");
+    let canvas = await html2canvas(input, { Scale: 2 });
+
+    let imgData = canvas.toDataURL("image/png");
+
+    // to crate a pdf on taht img
+    const pdf = new jsPDF();
+
+    const width = pdf.internal.pageSize.getWidth();
+    const height = (canvas.height * width) / canvas.width;
+    pdf.addImage(imgData, "PNG", 0, 0, width, height);
+    pdf.save("resume.pdf");
+  };
+
   return (
     <div>
       <Box className="mt-3 mb-3">
-        <Stack direction={"row"} spacing={1} className="justify-content-end">
-          <Button className="fs-3" variant="text">
-            <FaDownload />
-          </Button>
-          <Button className="fs-3" variant="text">
-            <FaHistory />
-          </Button>
+        {showButtons ? (
+          <Stack direction={"row"} spacing={1} className="justify-content-end">
+            <Button onClick={downloadClick} className="fs-3" variant="text">
+              <FaDownload />
+            </Button>
+            <Link to={"/history"} className="fs-3" variant="text">
+              <FaHistory />
+            </Link>
 
-         <Edit/>
-          <Button variant="text">Back</Button>
-        </Stack>
+            <Edit resumeData={resumeData} />
+            <Button variant="text">Back</Button>
+          </Stack>
+        ) : (
+          ""
+        )}
       </Box>
 
       <Box
@@ -35,40 +59,53 @@ const Preview = () => {
           borderRadius: "15px",
         }}
       >
-        <Paper elevation={10} className="w-100 p-4">
+        {isFromHistoryPage ? (
+          <Button onClick={downloadClick} className="fs-3" variant="text">
+            <FaDownload />
+          </Button>
+        ) : (
+          ""
+        )}
+        <Paper id="result" elevation={10} className="w-100 p-4">
           {" "}
           <Typography variant="h4" align="center" component={"h1"}>
-            Full Name
+            {resumeData?.fullName}
           </Typography>
           <Typography variant="subtitle2" align="center" color="info">
-            Job Title
+            {resumeData?.Jobtitle}
           </Typography>
           <Typography variant="subtitle2" align="center">
-            Location | Eamil | Phone
+            {resumeData?.location} | {resumeData?.email} |{" "}
+            {resumeData?.phoneNumber}
           </Typography>
           <Typography variant="body2" align="center" mb={3}>
-            <Link>Gitub</Link> | <Link>Linkedin</Link> | <Link>Portfolio</Link>
+            <Link>{resumeData?.github}</Link> |{" "}
+            <Link>{resumeData?.linkedin}</Link> |{" "}
+            <Link>{resumeData?.portfolio}</Link>
           </Typography>
           <Divider>Summary</Divider>
-          <Typography>summary content</Typography>
+          <Typography>{resumeData?.summary}</Typography>
           <Divider>Education</Divider>
           <Typography variant="h5" align="center">
-            Course Name
+            {resumeData?.courseName}
           </Typography>
           <Typography variant="body1" align="center" mb={4}>
-            collegeName | University | Year
+            {resumeData?.collegeName} | {resumeData?.university} |{" "}
+            {resumeData?.yearOfPassout}
           </Typography>
           <Divider>Professional Experience</Divider>
           <Typography variant="h5" align="center">
-            Job Name
+            {resumeData?.jobOfWork}
           </Typography>
           <Typography variant="body1" align="center" mb={4}>
-            Comapny Name | Loacation | duration
+            {resumeData?.campanyName} | {resumeData?.locationOfWork} |{" "}
+            {resumeData?.durationOfWork}
           </Typography>
           <Divider>Skills</Divider>
-          <Stack direction={"row"} spacing={2}>
-            <Button variant="outlined">React JS</Button>
-            <Button variant="outlined">Angular</Button>
+          <Stack className="mt-4" direction={"row"} spacing={2}>
+            {resumeData?.skills?.map((eachSkill) => (
+              <Button variant="outlined">{eachSkill}</Button>
+            ))}
           </Stack>
         </Paper>
       </Box>

@@ -17,7 +17,9 @@ const LandingPage = () => {
             Designed to get hired. <br />
             Your skills, your story, your next job — all in one.
           </p>
-          <Link className="btn btn-primary" to="/resumegenerator">Make your Resume</Link>
+          <Link className="btn btn-primary" to="/resumegenerator">
+            Make your Resume
+          </Link>
         </div>
       </section>
 
@@ -60,139 +62,208 @@ const LandingPage = () => {
         <h2 className="text-center mb-4">Testinominals</h2>
         <div
           id="carouselExampleAutoplaying"
-          class="carousel ride "
+          className="carousel ride "
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <Container>
                 <Row>
                   <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow ms-4 mt-3">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"  className="rounded-circle img-fluid ms-5 shadow"/>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow ms-4 mt-3"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
                       <Card.Body>
                         <Card.Title>Pooja S.</Card.Title>
                         <Card.Text className="fst-italic">
-                          “I had no idea how to start my resume. With this tool, I created a professional CV in minutes and got shortlisted for my dream job.”
+                          “I had no idea how to start my resume. With this tool,
+                          I created a professional CV in minutes and got
+                          shortlisted for my dream job.”
                         </Card.Text>
-                        
                       </Card.Body>
                     </Card>
                   </Col>
 
-                   <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow ms-4 mt-3">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid2.png"  className="rounded-circle img-fluid ms-5 shadow"/>
+                  <Col>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow ms-4 mt-3"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid2.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
                       <Card.Body>
                         <Card.Title>Sandeep K.</Card.Title>
                         <Card.Text className="fst-italic">
-                         “The resume builder is so easy to use. The designs are modern and HR-friendly. I got compliments on my resume in my first interview itself.”
+                          “The resume builder is so easy to use. The designs are
+                          modern and HR-friendly. I got compliments on my resume
+                          in my first interview itself.”
                         </Card.Text>
-                        
                       </Card.Body>
                     </Card>
                   </Col>
 
-
-                   <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow ms-4 mt-3">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid7.png"  className="rounded-circle img-fluid ms-5 shadow"/>
+                  <Col>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow ms-4 mt-3"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid7.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
                       <Card.Body>
                         <Card.Title>Meera D.</Card.Title>
                         <Card.Text className="fst-italic">
-                         “I applied with my old resume for months with no luck. After using this resume builder, I got interview calls within a week. Truly a game-changer.”
+                          “I applied with my old resume for months with no luck.
+                          After using this resume builder, I got interview calls
+                          within a week. Truly a game-changer.”
                         </Card.Text>
-                        
                       </Card.Body>
                     </Card>
                   </Col>
                 </Row>
               </Container>
             </div>
-            <div class="carousel-item">
-             <Container>
-                <Row>
-                  <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow ms-4">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"  className="rounded-circle img-fluid ms-5 shadow"/>
-                      <Card.Body>
-                        <Card.Title>Pooja S.</Card.Title>
-                        <Card.Text>
-                          “I had no idea how to start my resume. With this tool, I created a professional CV in minutes and got shortlisted for my dream job.”
-                        </Card.Text>
-                        
-                      </Card.Body>
-                    </Card>
-                  </Col>
-
-                   <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"  className="rounded-circle img-fluid ms-5 shadow"/>
-                      <Card.Body>
-                        <Card.Title>Pooja S.</Card.Title>
-                        <Card.Text>
-                          “I had no idea how to start my resume. With this tool, I created a professional CV in minutes and got shortlisted for my dream job.”
-                        </Card.Text>
-                        
-                      </Card.Body>
-                    </Card>
-                  </Col>
-
-
-                   <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"  className="rounded-circle img-fluid ms-5 shadow"/>
-                      <Card.Body>
-                        <Card.Title>Pooja S.</Card.Title>
-                        <Card.Text>
-                          “I had no idea how to start my resume. With this tool, I created a professional CV in minutes and got shortlisted for my dream job.”
-                        </Card.Text>
-                        
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </Row>
-              </Container>
-            </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <Container>
                 <Row>
                   <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow ms-4">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"  className="rounded-circle img-fluid ms-5 shadow"/>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow ms-4"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
                       <Card.Body>
                         <Card.Title>Pooja S.</Card.Title>
                         <Card.Text>
-                          “I had no idea how to start my resume. With this tool, I created a professional CV in minutes and got shortlisted for my dream job.”
+                          “I had no idea how to start my resume. With this tool,
+                          I created a professional CV in minutes and got
+                          shortlisted for my dream job.”
                         </Card.Text>
-                        
                       </Card.Body>
                     </Card>
                   </Col>
 
-                   <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"  className="rounded-circle img-fluid ms-5 shadow"/>
+                  <Col>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
                       <Card.Body>
                         <Card.Title>Pooja S.</Card.Title>
                         <Card.Text>
-                          “I had no idea how to start my resume. With this tool, I created a professional CV in minutes and got shortlisted for my dream job.”
+                          “I had no idea how to start my resume. With this tool,
+                          I created a professional CV in minutes and got
+                          shortlisted for my dream job.”
                         </Card.Text>
-                        
                       </Card.Body>
                     </Card>
                   </Col>
 
-
-                   <Col>
-                    <Card style={{ width: "18rem" }} className="text-center shadow">
-                      <Card.Img variant="center" src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"  className="rounded-circle img-fluid ms-5 shadow"/>
+                  <Col>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
                       <Card.Body>
                         <Card.Title>Pooja S.</Card.Title>
                         <Card.Text>
-                          “I had no idea how to start my resume. With this tool, I created a professional CV in minutes and got shortlisted for my dream job.”
+                          “I had no idea how to start my resume. With this tool,
+                          I created a professional CV in minutes and got
+                          shortlisted for my dream job.”
                         </Card.Text>
-                        
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
+            <div className="carousel-item">
+              <Container>
+                <Row>
+                  <Col>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow ms-4"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
+                      <Card.Body>
+                        <Card.Title>Pooja S.</Card.Title>
+                        <Card.Text>
+                          “I had no idea how to start my resume. With this tool,
+                          I created a professional CV in minutes and got
+                          shortlisted for my dream job.”
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+
+                  <Col>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
+                      <Card.Body>
+                        <Card.Title>Pooja S.</Card.Title>
+                        <Card.Text>
+                          “I had no idea how to start my resume. With this tool,
+                          I created a professional CV in minutes and got
+                          shortlisted for my dream job.”
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+
+                  <Col>
+                    <Card
+                      style={{ width: "18rem" }}
+                      className="text-center shadow"
+                    >
+                      <Card.Img
+                        variant="center"
+                        src="https://assets.livecareer.co.uk/blobimages/lcintl-lp/luk/images/grid/grid1.png"
+                        className="rounded-circle img-fluid ms-5 shadow"
+                      />
+                      <Card.Body>
+                        <Card.Title>Pooja S.</Card.Title>
+                        <Card.Text>
+                          “I had no idea how to start my resume. With this tool,
+                          I created a professional CV in minutes and got
+                          shortlisted for my dream job.”
+                        </Card.Text>
                       </Card.Body>
                     </Card>
                   </Col>
@@ -201,22 +272,28 @@ const LandingPage = () => {
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next text-dark"
+            className="carousel-control-next text-dark"
             type="button"
             data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon " aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span
+              className="carousel-control-next-icon "
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
       </section>
